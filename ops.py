@@ -1,14 +1,14 @@
 from tensor import Tensor
 
-from abc import ABC
+import abc
 
 
-class TensorOperation(ABC):
-    @abstractmethod
+class TensorOperation(abc.ABC):
+    @abc.abstractmethod
     def forward(self):
         ...
 
-    @abstractmethod
+    @abc.abstractmethod
     def backward(self):
         ...
 
